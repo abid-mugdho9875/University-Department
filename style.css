@@ -1,0 +1,67 @@
+/* common css  */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css for tittle - 01 */
+.topnav {
+  overflow: hidden;
+  background-color: wheat;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+
+  color: white;
+}
+
+/* logo section */
+.logo-nav {
+  display: flex;
+
+
+}
+
+.tittle-department {
+  text-align: center;
+  padding: 50px;
+  height: px;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+.tittle-department h1 {
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+/* image-slider */
+
+.slider-image {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+
+}
+
+/* grid column */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
