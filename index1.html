@@ -29,7 +29,7 @@
             </div>
 
             <!-- navbar section -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="image/cuet_wb.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -124,13 +124,13 @@
                     <div class="p-3 border bg-light fs-2 fw-bolder">OUR <span class="text-success">MENU</span></div>
                     <ul class="menu-siderbar">
                         <li class="nav-item menulist">
-                            <a href="" class="text-decoration-none">About Us</a>
+                            <a href="#about-us" class="text-decoration-none">About Us</a>
                         </li>
                         <li class="nav-item menulist">
-                            <a href="" class="text-decoration-none">Mission and Vision</a>
+                            <a href="#mission" class="text-decoration-none">Mission and Vision</a>
                         </li>
                         <li class="nav-item menulist">
-                            <a href="" class="text-decoration-none">Programs
+                            <a href="#program-offer" class="text-decoration-none">Programs
                                 Offered</a>
                         </li>
                         <li class="nav-item menulist">
@@ -142,13 +142,13 @@
                         </li>
 
                         <li class="nav-item menulist">
-                            <a href="" class="text-decoration-none">Student login</a>
+                            <a href="#program-offer" class="text-decoration-none">Student login</a>
                         </li>
                         <li class="nav-item menulist">
                             <a href="" class="text-decoration-none">Downloads</a>
                         </li>
                         <li class="nav-item menulist">
-                            <a href="" class="text-decoration-none">Contact us</a>
+                            <a href="#contact" class="text-decoration-none">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -222,7 +222,7 @@
             </div>
         </div>
         <!-- about us section -->
-        <div class="container text-end " style="margin-top:40px;">
+        <div class="container text-end " id="about-us" style="margin-top:40px;">
             <h3 class="fs-2 fw-bolder">About <span class="text-success ">Us</span></h3>
             <div class="card mb-3">
                 <div class="row g-0">
@@ -249,7 +249,7 @@
             </div>
         </div>
         <!-- mission and vission -->
-        <div class="container text-start " style="margin-top:40px;">
+        <div class="container text-start " id="mission" style="margin-top:40px;">
             <h3 class="fs-2 fw-bolder">Mission And <span class="text-success ">Vision</span></h3>
             <div class="card mb-3">
                 <div class="row g-0">
@@ -278,7 +278,7 @@
             </div>
         </div>
         <!-- program offered -->
-        <div class="container text-end  border-none" style="margin-top:40px;">
+        <div class="container text-end  border-none" id="program-offer" style="margin-top:40px;">
             <h3 class="fs-2 fw-bolder">Program <span class="text-success ">Offered</span></h3>
             <div class="card mb-3">
                 <div class="row g-0">
@@ -305,14 +305,13 @@
             </div>
         </div>
         <!-- student login -->
-        <div class="container text-center  border-0" style="margin-top:40px;">
+        <div class="container text-center  border-0" id="student-login" style="margin-top:40px;">
             <h3 class="fs-2 fw-bolder">Student <span class="text-success ">Login</span></h3>
             <div class="card border-0 mb-3">
                 <div class="row d-flex justify-content-center ">
                     <div class="col-md-6 border border-1 d-flex flex-column justify-content-center align-items-center">
                         <img src="image/tel10.JPG" class="h-50 w-50" alt="">
-                        <button class="btn btn-class btn-success w-50 mt-3"
-                            onclick="window.location.href = 'http://127.0.0.1:5500/login.html'"> Student Login </button>
+                        <a href="login.html"><button class="btn btn-success  w-100">Go To Login</button></a>
 
                     </div>
 
@@ -322,9 +321,30 @@
                 </div>
             </div>
         </div>
+        <!-- contact us page -->
+        <div class="container mt-4 p-5" id="contact" style="background-color: #333333; ">
+            <div class="row">
+                <div class="col-4 d-flex flex-column text-white gy-2">Director Of Administration
+                    <i class="fas fa-phone text-white mb-3 mt-3">017971266</i>
+                    <i class="fas fa-envelope-square text-white">cue@bd.com</i>
+
+                </div>
+                <div class="col-4 d-flex flex-column text-white gy-2">Stuff ICT Cell
+                    <i class="fas fa-phone text-white mb-3 mt-3">017971266</i>
+                    <i class="fas fa-envelope-square text-white">cue@bd.com</i>
+                </div>
+                <div class="col-4 d-flex flex-column text-white gy-2">Departmental Contract
+                    <i class="fas fa-phone text-white mb-3 mt-3">017971266</i>
+                    <i class="fas fa-envelope-square text-white">cue@bd.com</i>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- footer section -->
-    <footer></footer>
+    <footer class="container p-5 text-center" style="background-color: #000000;">
+        <p class="text-white">2021<i class="far fa-copyright">All right reserved to Abid Hasan Mukdho as per copyright
+                law.</i> </p>
+    </footer>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
