@@ -5,233 +5,424 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="short icon" type="image/jpg" href="image/cuet2.jpg">
     <!-- fontawesome  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="photogallary.css">
     <title>CUET ETE</title>
 </head>
 
 <body>
+    <!-- header section -->
     <header>
-        <!-- upppernavigation section  -->
-        <section class="container">
-            <div class="uppertopnav" style="background-color: #519AA6;">
-                <a href=""><i class="far fa-envelope"></i></i>CUET Mail</a>
-                <a href="">Log in | IICT</a>
+        <!-- uppernavbar section -->
+        <div class="nvabr" id="navbar-sticky">
+            <div class="uppertopnav text-end  " style="background-color: #519AA6;">
+                <a class="text-decoration-none text-white" href=""><i class="far fa-envelope"></i></i>CUET Mail</a>
+                <a class="text-decoration-none text-white" href="">Log in | IICT</a>
             </div>
-            <!-- Image and text -->
-            <!-- topnavigation section -->
-            <!-- Image and text -->
-            <br>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-                <a class="navbar-brand" href="#">
-                    <img src="image/cuet_wb.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                    Chittagong University Of Engineering and Technology
-                </a>
+            <!-- navbar section -->
+            <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/cuet_wb.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Chittagong University Of Engineering and Technology
+                    </a>
 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ABOUT CUET
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Message From VC</a></li>
+                                    <li><a class="dropdown-item" href="#">History Of CUET</a></li>
+                                    <li><a class="dropdown-item" href="#">Mission & Vission</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Admission <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contract</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Notice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Alumunai</a>
+                            </li>
 
-                <div class="collapse navbar-collapse ms-4" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                ABOUT CUET
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">VC Speech</a>
-                                <a class="dropdown-item" href="#">Mission and Vission</a>
-                                <a class="dropdown-item" href="#">Campus Life</a>
-                            </div>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Admission <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contract</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Notice</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Alumunai</a>
-                        </li>
-
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </nav>
 
+        </div>
+
+
+        <section class="container">
 
 
 
 
-
-
-
-
-
-            <!-- navigation bar logo and title section -->
-
-
-
-
-            <div class="tittle-department" style="padding-left:16px; background-color: #F5F5F5;">
+            <!-- //h1 tag text -->
+            <div class="tittle-department text-center mt-3 mb-3 p-5"
+                style="padding-left:16px; background-color: #F5F5F5;">
 
                 <h1>Department Of Electronics and Telecommunication Engineering(ETE)</h1>
 
+
+            </div>
+            <marquee class="text-red" style="color: #519AA6; background-color: #E6F0FA;">Sessional Routine has been published.</marquee>
+            <!-- carousel divission -->
+            <div id="carouselExampleIndicators" class="carousel slide container-fluid" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/cuet3.jpg" class="d-block w-100 h-50" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/cuet4.jpg" class="d-block w-100 h-50" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/cuet5.jpg" class="d-block w-100 h-50" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
         </section>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="image/cuet3.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="image/cuet4.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="image/cuet5.jpg" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
     </header>
-    <main class="container mt-3">
-        <!-- //page navigation section -->
-        <div class="grid-container ">
-            <div class="me-4 page-navigation">
-                <h1>Page <span style="color: green;">Navigation</span></h1>
-                <ul class="menu-siderbar">
-                    <li class="nav-item">
-                        <a href="">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Mission and Vision</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Programs
-                            Offered</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Faculties</a>
-                    </li>
+    <!-- main section -->
+    <main>
+        <!-- page Navigation  -->
+        <div class="container mt-4 px-4">
+            <div class="row gx-5">
+                <div class="col-4">
+                    <div class="p-3 border bg-light fs-2 fw-bolder">OUR <span class="text-success">MENU</span></div>
+                    <ul class="menu-siderbar">
+                        <li class="nav-item menulist">
+                            <a href="#about-us" class="text-decoration-none">About Us</a>
+                        </li>
+                        <li class="nav-item menulist">
+                            <a href="#mission" class="text-decoration-none">Mission and Vision</a>
+                        </li>
+                        <li class="nav-item menulist">
+                            <a href="#program-offer" class="text-decoration-none">Programs
+                                Offered</a>
+                        </li>
+                        <li class="nav-item menulist">
+                            <a href="#faculty" class="text-decoration-none">Faculties</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a href="">Conferences and Seminars</a>
-                    </li>
+                        <li class="nav-item menulist">
+                            <a href="" class="text-decoration-none">Notice Board</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a href="">Student login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Downloads</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">Contact us</a>
-                    </li>
-                </ul>
+                        <li class="nav-item menulist">
+                            <a href="#program-offer" class="text-decoration-none">Student login</a>
+                        </li>
+                        <li class="nav-item menulist">
+                            <a href="" class="text-decoration-none">Downloads</a>
+                        </li>
+                        <li class="nav-item menulist">
+                            <a href="#contact" class="text-decoration-none">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <div class="p-3 border bg-light fs-2 fw-bolder">Latest On <span style="color: green;">
+                            Departmment</span>
+                        <div class="row mt-3">
+                            <div class="col-md-4 col-lg-4 p-0 p-lg-0 mb-3">
+                                <div class="content"> <a href="#">
+                                        <div class="content-overlay"></div> <img class="content-image"
+                                            src="image/ete_webonar_img.png">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Webinar</h3>
+                                            <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 p-0 p-lg-0">
+                                <div class="content"> <a href="#">
+                                        <div class="content-overlay"></div> <img class="content-image"
+                                            src="image/ete_webonar_img.png">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Webinar</h3>
+                                            <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 p-0 p-lg-0">
+                                <div class="content"> <a href="#">
+                                        <div class="content-overlay"></div> <img class="content-image"
+                                            src="image/ete_webonar_img.png">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Webinar</h3>
+                                            <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 p-0 p-lg-0 mb-3">
+                                <div class="content"> <a href="#">
+                                        <div class="content-overlay"></div> <img class="content-image"
+                                            src="image/ete_webonar_img.png">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Webinar</h3>
+                                            <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 p-0 p-lg-0">
+                                <div class="content"> <a href="#">
+                                        <div class="content-overlay"></div> <img class="content-image"
+                                            src="image/ete_webonar_img.png">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Webinar</h3>
+                                            <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 p-0 p-lg-0">
+                                <div class="content"> <a href="#">
+                                        <div class="content-overlay"></div> <img class="content-image"
+                                            src="image/ete_webonar_img.png">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Webinar</h3>
+                                            <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- latest department section -->
-            <div class="latestnewsDept ">
-                <h1>Latest On <span style="color: green;"> Departmment</span></h1>
+        </div>
+        <!-- about us section -->
+        <div class="container text-end " id="about-us" style="margin-top:40px;">
+            <h3 class="fs-2 fw-bolder">About <span class="text-success ">Us</span></h3>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="image/ETE-gift.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 ps-3">
+                        <div class="card-body">
+
+                            <p class="card-text card-font">ETE Department started its
+                                journey in 2012. The department is currently offering postgraduate program- M.Sc/ M Engg
+                                & undergraduate program- B.Sc in Electronics and Telecommunication Engineering,
+                                with an annual intake of 60 students. At present 200 students are studying . From the
+                                academic session of 2018-19 ETE dept. has started
+                                Postgraduate Program for the students. ETE Department provides well equipped and modern
+                                laboratory facilities for academic and research purposes in various fields of
+                                Electronic and Communication Engineering right from the outset.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mission and vission -->
+        <div class="container text-start " id="mission" style="margin-top:40px;">
+            <h3 class="fs-2 fw-bolder">Mission And <span class="text-success ">Vision</span></h3>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-8 ps-3">
+                        <div class="card-body">
+
+                            <p class="card-text card-font p-3">
+                                To foster and promote a distinctive educational institute identity and spirit. <br>
+                                To purpose excellence in research that will contribute to knowledge and learning.<br>
+                                To purpose excellence in curriculum, teaching and to a standard befitting an
+                                international research institute.<br>
+                                To develop and maximize the effectiveness of all staff.<br>
+                                To attract students with thirst of knowledge. to encourage and support them in their
+                                progress.<br>
 
 
-                <div class="row ">
-                    <div class="col-md-4 col-lg-4 p-0 p-lg-0 mb-3">
-                        <div class="content"> <a href="#">
-                                <div class="content-overlay"></div> <img class="content-image"
-                                    src="image/ete_webonar_img.png">
-                                <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">Webinar</h3>
-                                    <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
-                                </div>
-                            </a> </div>
+                            </p>
+
+                        </div>
                     </div>
-                    <div class="col-md-4 col-lg-4 p-0 p-lg-0">
-                        <div class="content"> <a href="#">
-                                <div class="content-overlay"></div> <img class="content-image"
-                                    src="image/ete_webonar_img.png">
-                                <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">Webinar</h3>
-                                    <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
-                                </div>
-                            </a> </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4 p-0 p-lg-0">
-                        <div class="content"> <a href="#">
-                                <div class="content-overlay"></div> <img class="content-image"
-                                    src="image/ete_webonar_img.png">
-                                <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">Webinar</h3>
-                                    <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
-                                </div>
-                            </a> </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4 p-0 p-lg-0">
-                        <div class="content"> <a href="#">
-                                <div class="content-overlay"></div> <img class="content-image"
-                                    src="image/ete_webonar_img.png">
-                                <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">Webinar</h3>
-                                    <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
-                                </div>
-                            </a> </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4 p-0 p-lg-0">
-                        <div class="content"> <a href="#">
-                                <div class="content-overlay"></div> <img class="content-image"
-                                    src="image/ete_webonar_img.png">
-                                <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">Geysers Valley Hotel</h3>
-                                    <p class="content-text"><i class="fa fa-map-marker"></i> Russia</p>
-                                </div>
-                            </a> </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4 p-0 p-lg-0 mb-3">
-                        <div class="content"> <a href="#">
-                                <div class="content-overlay"></div> <img class="content-image"
-                                    src="image/ete_webonar_img.png">
-                                <div class="content-details fadeIn-bottom">
-                                    <h3 class="content-title">Webinar</h3>
-                                    <p class="content-text"><i class="fa fa-map-marker"></i> ETE</p>
-                                </div>
-                            </a> </div>
+                    <div class="col-md-4">
+                        <img src="image/ete-mission.jpg" class="img-fluid rounded-start w-100 h-100" alt="...">
                     </div>
 
                 </div>
             </div>
-            <div class="notice-board">
-                <h1>Notice <span style="color: green;"> Board</span></h1>
+        </div>
+
+        <!-- our faculties -->
+        <div class="container text-end " id="faculty" style="margin-top:40px;">
+            <h3 class="fs-2 fw-bolder">Faculty <span class="text-success ">Member</span></h3>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="image/cuet5.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 ps-3">
+                        <div class="card-body">
+
+                            <p class="card-text card-font">The expertise of the faculty members of ETE department ranges
+                                from Antenna to VLSI technology. The research areas of teachers and students of
+                                this department include Antenna, navigation, radar detection and tracking, optical
+                                fibre communication, broadband wireless communications.
+                            </p>
+                            <a href="Faculty_member.html"><button type="button"
+                                    class="btn btn-outline-success w-75">View Our
+                                    Faculty Member</button></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- program offered -->
+        <div class="container text-start  border-none" id="program-offer" style="margin-top:40px;">
+            <h3 class="fs-2 fw-bolder">Program <span class="text-success ">Offered</span></h3>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-12 ps-3">
+                        <div class="card-body">
+
+                            <p class="card-text card-font p-3 text-start">
+                                The Department of Electronics and Telecommunication Engineering offers the
+                                following programs: <br>
+
+                                Bachelor of Science Program: BSc in ETE <br>
+                                Master of Science Program: MSc in ETE <br>
+                                Master of Engineering Program: M Eng. in ETE <br>
+                                Doctoral Program: Running Soon....<br>
+
+
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- student login -->
+        <div class="container text-center  border-0" id="student-login" style="margin-top:40px;">
+            <h3 class="fs-2 fw-bolder">Student <span class="text-success ">Login</span></h3>
+            <div class="card border-0 mb-3">
+                <div class="row d-flex justify-content-center ">
+                    <div class="col-md-6 border border-1 d-flex flex-column justify-content-center align-items-center">
+                        <img src="image/tel10.JPG" class="h-50 w-50" alt="">
+                        <a href="login.html"><button class="btn btn-success  w-100">Go To Login</button></a>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- contact us page -->
+        <div class="container mt-4 " id="contact" style="background-color: #333333; ">
+            <h1 class="text-white p-2">Contract Us</h1>
+            <div class="row p-5">
+                <div class="col-4 d-flex flex-column text-white gy-2">Director Of Administration
+                    <i class="fas fa-phone text-white mb-3 mt-3">017971266</i>
+                    <i class="fas fa-envelope-square text-white">cue@bd.com</i>
+
+                </div>
+                <div class="col-4 d-flex flex-column text-white gy-2">Stuff ICT Cell
+                    <i class="fas fa-phone text-white mb-3 mt-3">017971266</i>
+                    <i class="fas fa-envelope-square text-white">cue@bd.com</i>
+                </div>
+                <div class="col-4 d-flex flex-column text-white gy-2">Departmental Contract
+                    <i class="fas fa-phone text-white mb-3 mt-3">017971266</i>
+                    <i class="fas fa-envelope-square text-white">cue@bd.com</i>
+                </div>
             </div>
         </div>
     </main>
-    <footer></footer>
-    
+    <!-- footer section -->
+    <footer class="container p-5 text-center" style="background-color: #000000;">
+        <p class="text-white">2021<i class="far fa-copyright">All right reserved to Abid Hasan Mukdho as per copyright
+                law.</i> </p>
+    </footer>
+    <!-- sticky portion -->
+    <script>
+        // window.onscroll = function () {
+        //     myFunction()
+        // };
 
+        // var navbar = document.getElementById("navbar-sticky");
+        // var sticky = navbar.offsetTop;
+
+        // function myFunction() {
+        //     if (window.pageYOffset >= sticky) {
+        //         navbar.classList.add("sticky")
+        //     } else {
+        //         navbar.classList.remove("sticky");
+        //     }
+        // }
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    document.getElementById('navbar-sticky').classList.add('fixed-top');
+                    // add padding top to show content behind navbar
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    // remove padding top from body
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        });
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
